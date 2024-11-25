@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
 
 function Navbar() {
-  const [isMenuOpen] = useState(false);
-
   return (
     <nav className="navbar">
       <div className="navbar-brand">
@@ -16,10 +14,7 @@ function Navbar() {
         />
       </div>
 
-      {}
-
-      {}
-      <ul className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
+      <ul className="navbar-links">
         <li>
           <a href="#home">Home</a>
         </li>
